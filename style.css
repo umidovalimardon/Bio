@@ -1,0 +1,48 @@
+/* Gorizontal navigatsiya uchun CSS */
+.horizontal-nav {
+    list-style-type: none; /* Ro'yxat markerlarini olib tashlaymiz */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Elementlarni gorizontal qatorga qo'yish uchun */
+    justify-content: center; /* Elementlarni markazga joylashtirish */
+}
+
+.horizontal-nav li {
+    margin: 0 15px; /* Har bir element orasiga masofa qo'shish */
+}
+
+.horizontal-nav li a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.horizontal-nav li a:hover {
+    background-color: #575757; /* Hover effekti */
+}
+
+.section {
+     text-align: center;
+     color: #ffffff;
+}
+.footer {
+    text-align: center;
+}
+body {
+    background-color: rgb(0, 0, 0);
+}
+.footer {
+    color: #ffffff;
+}
+@media (max-width: 600px) {
+    .horizontal-nav {
+        flex-direction: column; /* Mobilda vertikal joylashtirish */
+    }
+
+    .horizontal-nav li {
+        margin: 5px 0; /* Elementlar orasidagi masofani o'zgartirish */
+    }
+}
